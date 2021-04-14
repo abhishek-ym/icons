@@ -1,0 +1,9 @@
+let doc = document.getElementById("chatDetails");
+let iconElement = null;
+for (var i = 0; i < doc.childNodes.length; i++) {
+    if (doc.childNodes[i].className == "icon") {
+      iconElement = doc.childNodes[i];
+      break;
+    }        
+}
+iconElement.style.borderRadius="25px";
